@@ -1,0 +1,75 @@
+// import "./App.css";
+// import { useState, useEffect } from "react";
+
+// const Outer = (props) =>{
+
+//   return(
+//     <>
+//     <h6>name : {props.name}</h6>
+//     <h6>email : {props.email}</h6>
+//     </>
+//   );
+// }
+
+// const App = () => {
+
+//   //variable defined
+//   const name = "anand";
+//   const isNameShowing = false;
+
+//   return (
+//     <div className="App">
+//       <>
+//       {/*inside the <div className="App">here</div>*/}
+//       <h1>Hello {name}
+//           {/* {isNameShowing ? name : "someONE"} */}
+//      </h1>
+//       <Outer name={"sanskar"} email={"sanskar@gmail.com"}/>
+//       <Outer name={"name2"} email={"name2@gmail.com"}/>
+//       <Outer name={"name3"} email={"name3@gmail.com"}/>
+//       <Outer name={"name4"} email={"name4@gmail.com"}/>
+//       {/* {this is how we use external variable function int the App function } */}
+//       </>
+//     </div>
+//   );
+// }
+
+// const App = () => {
+//   const [counter, setCounter] = useState(0); //in useState(0)  is intial value to the variable counter
+
+//   useEffect(() => {
+//     // setCounter(100);
+//     alert(
+//       "every time button clicked useing this alert inside the useEffect function is called as insid ethe dependency array has the counter in it each time it get updated value os it is passed inside the callback function of the useEffect like this ===" +
+//         counter
+//     );
+//   }, [counter]);
+
+//   return (
+//     <div className="App">
+//       <button onClick={() => setCounter((prevCounter) => prevCounter - 1)}>
+//         -
+//       </button>
+//       <h1>{counter}</h1>
+//       <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>
+//         +
+//       </button>
+//     </div>
+//   );
+// };
+
+// {isNameShowing ? (
+//             <>
+//             test
+//             </>
+//           ): (
+//             <>
+//             <h4>
+//                 this is 1st element in  the h4 in the {/*<></>*/} react fragment
+//             </h4>
+//             <h4>
+//                this is 2nd element in  the h4 in the {/*<></>*/} react fragment
+//             </h4>
+//             </>
+//           )}
+// export default App;
